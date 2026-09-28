@@ -81,7 +81,7 @@ function JobDetails() {
         <div className="job-footer">
           <button
             className="apply-button"
-            onClick={() => window.location.href = '/application'}
+            onClick={() => window.location.href = '/ApplicationForm'}
           >
             Continue to Application
           </button>

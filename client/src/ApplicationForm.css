@@ -1,0 +1,214 @@
+.application-page {
+  min-height: 100vh;
+  padding: 45px 20px;
+  background: #f7f8f7;
+}
+
+.application-container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #e2e5e3;
+  border-radius: 8px;
+}
+
+/* Header */
+
+.application-header {
+  padding: 40px 50px 30px;
+  border-bottom: 1px solid #e5e7e6;
+}
+
+.application-header h1 {
+  margin: 0 0 10px;
+  color: #18181b;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.application-header p {
+  margin: 0 0 15px;
+  color: #52525b;
+  font-size: 16px;
+}
+
+.application-header span {
+  color: #71717a;
+  font-size: 14px;
+}
+
+/* Sections */
+
+.form-section {
+  padding: 35px 50px;
+  border-bottom: 1px solid #e5e7e6;
+}
+
+.form-section h2 {
+  margin: 0 0 25px;
+  color: #18181b;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+/* Form */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #27272a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group label span {
+  color: #087f5b;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #d4d4d8;
+  border-radius: 5px;
+  background: #ffffff;
+  color: #18181b;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.form-group input {
+  height: 45px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #087f5b;
+  box-shadow: 0 0 0 2px rgba(8, 127, 91, 0.08);
+}
+
+.form-group input[type="file"] {
+  height: auto;
+  padding: 10px;
+}
+
+.help-text {
+  margin: 7px 0 0;
+  color: #71717a;
+  font-size: 13px;
+}
+
+.form-group small,
+.confirmation-section small {
+  display: block;
+  margin-top: 6px;
+  color: #c62828;
+  font-size: 13px;
+}
+
+/* Confirmation */
+
+.confirmation-section {
+  padding: 30px 50px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #3f3f46;
+  font-size: 14px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.checkbox-label input {
+  width: 17px;
+  height: 17px;
+  margin-top: 2px;
+  accent-color: #087f5b;
+}
+
+/* Footer */
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 25px 50px;
+  background: #fafafa;
+  border-radius: 0 0 8px 8px;
+}
+
+.submit-button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 5px;
+  background: #087f5b;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #066b4c;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+
+  .application-page {
+    padding: 15px 10px;
+  }
+
+  .application-header {
+    padding: 30px 25px;
+  }
+
+  .application-header h1 {
+    font-size: 27px;
+  }
+
+  .form-section {
+    padding: 30px 25px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .confirmation-section {
+    padding: 25px;
+  }
+
+  .form-footer {
+    padding: 20px 25px;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+}
