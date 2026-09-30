@@ -1,9 +1,22 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import './ApplicationForm.css'
+import './ApplicationSubmitted.css'
 
 function ApplicationForm() {
-  const navigate = useNavigate()
+
+  return (
+    <main className="submitted-page">
+      <section className="submitted-card">
+        <div className="submitted-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="m5 12.5 4.25 4.25L19.5 6.5" />
+          </svg>
+        </div>
+        <p className="submitted-eyebrow">Application received</p>
+        <h1>Your application has been submitted</h1>
+        <p className="submitted-copy">Thank you for your interest in the Web Developer role. We’ll review your application and contact you if there are next steps.</p>
+        <button className="submitted-link" onClick={() => { window.location.href = '/' }}>Back to job details</button>
+      </section>
+    </main>
+  )
 
   const [formData, setFormData] = useState({
     firstName: '',
@@ -94,7 +107,7 @@ function ApplicationForm() {
       })
     )
 
-    navigate('/submission-success')
+    window.location.href = '/application-submitted'
   }
 
   return (

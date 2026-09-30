@@ -76,22 +76,7 @@ function ApplicationForm() {
       return
     }
 
-    // Temporary storage until backend is added
-    sessionStorage.setItem(
-      'application',
-      JSON.stringify({
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        email: formData.email,
-        phone: formData.phone,
-        location: formData.location,
-        linkedin: formData.linkedin,
-        github: formData.github,
-        coverLetter: formData.coverLetter
-      })
-    )
-
-    window.location.href = '/submission-success'
+    window.location.href = '/application-submitted'
   }
 
   return (
